@@ -74,7 +74,7 @@ function loaders() {
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        exclude: /node_modules\/(?!ipfs-repo)/,
         use: [babelLoader()]
       }
     ]
